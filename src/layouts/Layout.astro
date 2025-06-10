@@ -1,4 +1,7 @@
 ---
+import '@fontsource/itim';
+import itim from '@fontsource/itim/files/itim-latin-400-normal.woff2?url';
+
 import "../styles/global.css";
 ---
 
@@ -10,6 +13,7 @@ import "../styles/global.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Confluences Citoyennes</title>
+		<link rel="preload" as="font" type="font/woff2" href={itim} crossorigin="anonymous" />
 	</head>
 	<body>
 		<slot />

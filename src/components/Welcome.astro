@@ -5,7 +5,7 @@ import couffouleux from '../assets/couffouleux.jpg';
 import confluons from '../assets/confluons.png';
 ---
 
-<section>
+<section class="mb-6">
   <div class="bg-cc-green p-4">
     <div class="max-w-5xl mx-auto flex flex-row gap-4 justify-end">
       <a href="/" class="inline-block text-sm bg-cc-yellow px-4 py-1 rounded-full">JE PARTICIPE</a>
@@ -13,9 +13,11 @@ import confluons from '../assets/confluons.png';
     </div>
   </div>
 
-  <div class="p-4 flex flex-col sm:flex-row items-center justify-center gap-4 ">
+  <div class="p-4 flex flex-col sm:flex-row items-center justify-center gap-4">
     <Image src={logo} alt="Confluences Citoyennes" width={250} />
-    <div class="text-cc-blue text-2xl font-bold">Participation, Écologie, Solidarité</div>
+    <h1 class="text-cc-blue text-3xl">
+      <span class="sr-only">Confluences Citoyennes</span>
+      Participation, Écologie, Solidarité</h1>
   </div>
 
   <div class="bg-cc-green p-4">
@@ -24,7 +26,7 @@ import confluons from '../assets/confluons.png';
     </div>
   </div>
 
-  <div class="p-4 max-w-5xl mx-auto flex flex-col sm:flex-row gap-8 items-center justify-between">
+  <div class="p-8 max-w-5xl mx-auto flex flex-col sm:flex-row gap-8 items-center justify-between">
     <p>
       Nous sommes des habitants et habitantes de Couffouleux qui se rassemblent pour construire l’avenir de leur
       commune.

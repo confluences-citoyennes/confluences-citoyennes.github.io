@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+/* @layer base {
+  a {
+    @apply text-black visited:text-black;
+  }
+} */
+
+@theme {
+  --color-cc-green: #3ca61a;
+  --color-cc-yellow: #f7dd55;
+  --color-cc-blue: #11468c;
+}

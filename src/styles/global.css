@@ -6,18 +6,16 @@
   h3,
   h4,
   h5,
-  h6,
-  a {
-    font-family: 'Itim', cursive;
-  }
-
-  a {
-    font-weight: bold;
+  h6 {
+    font-family: 'Itim', 'sans-serif';
   }
 }
+
 @theme {
   --color-cc-green: #3ca61a;
   --color-cc-yellow: #f7dd55;
   --color-cc-blue: #11468c;
   --color-cc-cyan: #49a9b6;
+
+  --font-itim: 'Itim', 'sans-serif';
 }

@@ -1,5 +1,6 @@
 ---
-
+import atelier1 from '../assets/atelier1.jpg';
+import { Image } from 'astro:assets';
 ---
 
 <section class="mb-6">
@@ -7,13 +8,45 @@
     <h2 class="text-white text-3xl text-center">POUR ALLER PLUS LOIN...</h2>
   </div>
 
-  <div class="p-4 max-w-5xl mx-auto space-y-2 text-center">
-    <p class="text-cc-green p-4 text-xl">Pour nous rencontrer - Prochain évènement</p>
-    <p>Retrouvez-nous</p>
-    <p>Samedi 5 juillet 2025</p>
-    <p>Dans le parc de la Mairie à 19h (à gauche)</p>
-    <p>pour un temps d’information</p>
-    <p>suivi d’un repas partagé</p>
-    <p>Moment familial, espace de jeux pour enfants</p>
+  <div class="p-4 max-w-5xl mx-auto space-y-2" id="prochain-evenement">
+    <p class="text-cc-green text-xl">Prochain évènement</p>
+
+    <div class="lg:grid lg:grid-cols-2 gap-4">
+      <div class="space-y-2">
+        <p>
+          Notre premier atelier public programmatique aura lieu Samedi 20 septembre de 17h à 19h30 dans la salle
+          Guerdavid. Nous espérons que vous bloquerez ce créneau dans vos agendas (que nous savons chargés).
+        </p>
+
+        <p>
+          Le premier thème choisi, pour prolonger notre ressenti climatique de cet été : "Ma commune se réchauffe, que
+          peut-on faire ?"
+        </p>
+
+        <p>
+          Dans un contexte de dérèglement climatique, les plans d'actions d'adaptation et d'atténuation doivent se
+          développer à tous les niveaux. Les échelons locaux de la commune et de l'agglomération ont leur rôle à jouer.
+          L'initiative citoyenne a également toute sa place.
+        </p>
+
+        <p>
+          Nous invitons les habitants de Couffouleux à venir parler de ce sujet : constater, réfléchir, proposer à
+          travers des sous-thèmes et une organisation permettant l'expression de tous.
+        </p>
+        <p>
+          N'hésitez pas à faire connaître cet atelier en faisant suivre l'information à vos contacts. Si vous souhaitez
+          recevoir les visuels pour inviter vos contacts par messagerie ou des affiches à imprimer, vous pouvez écrire à
+          confluences_citoyennes@mailo.com.
+        </p>
+
+        <p>
+          Nous vous remercions par avance de votre présence nécessaire pour donner tout son sens à la Participation qui
+          est un fondement de Confluences Citoyennes.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <Image src={atelier1} alt="Confluences Citoyennes" width={450} />
+      </div>
+    </div>
   </div>
 </section>

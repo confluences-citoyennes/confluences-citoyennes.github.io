@@ -1,11 +1,11 @@
 ---
-import atelier1 from '../assets/atelier1.jpg';
+import flyer2 from '../assets/flyer2.jpg';
 import { Image } from 'astro:assets';
 ---
 
 <section class="mb-6">
-  <div class="bg-cc-green p-4">
-    <h2 class="text-white text-3xl text-center">POUR ALLER PLUS LOIN...</h2>
+  <div class="bg-cc-yellow p-4">
+    <h2 class="text-black text-3xl text-center">PROCHAINS RENDEZ-VOUS, PROCHAINES ACTIONS</h2>
   </div>
 
   <div class="p-4 max-w-5xl mx-auto space-y-2" id="prochain-evenement">
@@ -14,38 +14,34 @@ import { Image } from 'astro:assets';
     <div class="lg:grid lg:grid-cols-2 gap-4">
       <div class="space-y-2">
         <p>
-          Notre premier atelier public programmatique aura lieu Samedi 20 septembre de 17h à 19h30 dans la salle
-          Guerdavid. Nous espérons que vous bloquerez ce créneau dans vos agendas (que nous savons chargés).
+          Le premier atelier public programmatique de Confluences Citoyennes a réuni une quarantaine d'habitants samedi
+          20/09 pour plancher sur la question "Ma commune se réchauffe, que peut-on faire ?".
         </p>
 
         <p>
-          Le premier thème choisi, pour prolonger notre ressenti climatique de cet été : "Ma commune se réchauffe, que
-          peut-on faire ?"
+          Après une présentation rapide de l'initiative de Confluences Citoyennes, deux temps de tables rondes ont été
+          réalisés. Les participants ont échangé en petit groupe autour de 3 thèmes pré-selectionnés : la mobilité, la
+          végétalisation et l'habitat. Des propositions sur les leviers d'actions de lacommune, de l'agglo et des
+          citoyens à Couffouleux ont été formulées. Un deuxième temps d'échange a permis de regrouper les tables, de
+          mettre en commun les idées et de faire une sélection collective des propositions.
         </p>
 
         <p>
-          Dans un contexte de dérèglement climatique, les plans d'actions d'adaptation et d'atténuation doivent se
-          développer à tous les niveaux. Les échelons locaux de la commune et de l'agglomération ont leur rôle à jouer.
-          L'initiative citoyenne a également toute sa place.
+          Le fruit de l'ensemble de ce travail va nourrir la construction programmatique de Confluences Citoyennes et
+          viendra compléter les enquêtes réalisées cet été. Nous invitons celles et ceux qui sont intéressé·es par ce
+          travail à nous rejoindre et/ou à participer aux ateliers suivants :
         </p>
 
-        <p>
-          Nous invitons les habitants de Couffouleux à venir parler de ce sujet : constater, réfléchir, proposer à
-          travers des sous-thèmes et une organisation permettant l'expression de tous.
-        </p>
-        <p>
-          N'hésitez pas à faire connaître cet atelier en faisant suivre l'information à vos contacts. Si vous souhaitez
-          recevoir les visuels pour inviter vos contacts par messagerie ou des affiches à imprimer, vous pouvez écrire à
-          confluences_citoyennes@mailo.com.
-        </p>
+        <ul class="list-disc list-inside [&>li]:ml-2">
+          <li><strong>Samedi 18 octobre</strong> - 17h à 19h30 - Salle Mandela</li>
+          <li><strong>Samedi 22 novembre</strong> - 17h à 19h30 - Salle De Guerdavid</li>
+          <li><strong>Samedi 13 décembre</strong> - 17h à 19h30 - Salle De Guerdavid</li>
+        </ul>
 
-        <p>
-          Nous vous remercions par avance de votre présence nécessaire pour donner tout son sens à la Participation qui
-          est un fondement de Confluences Citoyennes.
-        </p>
+        <p>Les ateliers de travail sont suivis d'un pot.</p>
       </div>
       <div class="flex justify-center">
-        <Image src={atelier1} alt="Confluences Citoyennes" width={450} />
+        <Image src={flyer2} alt="Confluences Citoyennes" width={450} />
       </div>
     </div>
   </div>

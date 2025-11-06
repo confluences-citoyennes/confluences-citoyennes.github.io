@@ -1,5 +1,7 @@
 ---
-import flyer2 from '../assets/flyer2.jpg';
+import flyer200925 from '../assets/flyer-200925.jpg';
+import flyer181025 from '../assets/flyer-181025.jpg';
+import flyer221125 from '../assets/flyer-221125.jpg';
 import { Image } from 'astro:assets';
 ---
 
@@ -9,21 +11,20 @@ import { Image } from 'astro:assets';
   </div>
 
   <div class="p-4 max-w-5xl mx-auto space-y-2" id="prochain-evenement">
-    <p class="text-cc-green text-xl">Prochain évènement</p>
-
-    <div class="lg:grid lg:grid-cols-2 gap-4">
+    <div class="lg:grid lg:grid-cols-2 gap-4 mb-10 items-start">
       <div class="space-y-2">
+        <p class="text-cc-green text-xl">Prochain évènement</p>
         <p>
-          Le premier atelier public programmatique de Confluences Citoyennes a réuni une quarantaine d'habitants samedi
-          20/09 pour plancher sur la question "Ma commune se réchauffe, que peut-on faire ?".
+          Au 3ième et (avant-dernier) atelier programmatique, nous nous intéresserons à la durabilité et à la
+          valorisation des ressources sur notre territoire. Nous parlerons économie locale, gestion des espaces et
+          ressources naturelles et alimentation locale.
         </p>
 
+        <p>Venez partager vos constats, vos besoins, vos propositions !</p>
+
         <p>
-          Après une présentation rapide de l'initiative de Confluences Citoyennes, deux temps de tables rondes ont été
-          réalisés. Les participants ont échangé en petit groupe autour de 3 thèmes pré-selectionnés : la mobilité, la
-          végétalisation et l'habitat. Des propositions sur les leviers d'actions de lacommune, de l'agglo et des
-          citoyens à Couffouleux ont été formulées. Un deuxième temps d'échange a permis de regrouper les tables, de
-          mettre en commun les idées et de faire une sélection collective des propositions.
+          Comme la dernière fois, un espace enfant sera prévu pour que les parents profitent au mieux du moment et nous
+          conclurons par un pot convivial.
         </p>
 
         <p>
@@ -33,7 +34,6 @@ import { Image } from 'astro:assets';
         </p>
 
         <ul class="list-disc list-inside [&>li]:ml-2">
-          <li><strong>Samedi 18 octobre</strong> - 17h à 19h30 - Salle Mandela</li>
           <li><strong>Samedi 22 novembre</strong> - 17h à 19h30 - Salle De Guerdavid</li>
           <li><strong>Samedi 13 décembre</strong> - 17h à 19h30 - Salle De Guerdavid</li>
         </ul>
@@ -41,8 +41,15 @@ import { Image } from 'astro:assets';
         <p>Les ateliers de travail sont suivis d'un pot.</p>
       </div>
       <div class="flex justify-center">
-        <Image src={flyer2} alt="Confluences Citoyennes" width={450} />
+        <Image src={flyer221125} alt="Confluences Citoyennes" width={450} />
       </div>
+    </div>
+
+    <p class="text-cc-green text-xl">Évènements passés</p>
+
+    <div class="flex justify-center">
+      <Image src={flyer181025} alt="Confluences Citoyennes" width={350} />
+      <Image src={flyer200925} alt="atelier public programmatique du 20/09/2025" width={350} />
     </div>
   </div>
 </section>

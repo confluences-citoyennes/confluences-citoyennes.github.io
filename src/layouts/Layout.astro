@@ -2,21 +2,24 @@
 import '@fontsource/itim';
 import itim from '@fontsource/itim/files/itim-latin-400-normal.woff2?url';
 
-import "../styles/global.css";
+import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Confluences Citoyennes</title>
-		<link rel="preload" as="font" type="font/woff2" href={itim} crossorigin="anonymous" />
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Confluences Citoyennes - Elections municipales Couffouleux</title>
+    <meta
+      name="description"
+      content="Une liste citoyenne et participative pour les élections municipales 2026 de Couffouleux"
+    />
+    <link rel="preload" as="font" type="font/woff2" href={itim} crossorigin="anonymous" />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
-

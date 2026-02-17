@@ -13,30 +13,20 @@ import { Image } from 'astro:assets';
   </div>
 
   <div class="p-4 max-w-5xl mx-auto space-y-2" id="prochain-evenement">
-    <div class="lg:grid lg:grid-cols-2 gap-4 mb-10 items-start">
-      <div class="space-y-2">
-        <p class="text-cc-green text-xl">Prochain évènement</p>
-        <p>
-          Cette réunion sera l’occasion de parler des multiples participations recueillies lors de l’enquête et des 4
-          ateliers publics à visée programmatique et de vous présenter les orientations du projet que nous souhaitons
-          pour Couffouleux.
-        </p>
+    <div class="space-y-2 mb-10">
+      <p class="text-cc-green text-xl">Prochain évènement</p>
+      <p>Présentation de la liste Confluences Citoyennes et du projet détaillé.</p>
+      <p>
+        <strong>Vendredi 06 mars 20h</strong> - 20h - Salle Hervé De Guerdavid
+      </p>
 
-        <p>Les premiers candidats désignés seront présentés.</p>
-
-        <ul class="list-disc list-inside [&>li]:ml-2">
-          <li><strong>Vendredi 23 janvier</strong> - 20h - Salle Hervé "De Guerdavid</li>
-          <li><strong>Vendredi 31 janvier</strong> - dernière réunion de désignation des candidats</li>
-        </ul>
-      </div>
-      <div class="flex justify-center">
-        <Image src={flyer230126} alt="atelier public du 23/01/2026" width={400} />
-      </div>
+      <p>Un espace enfant sera proposé sur place. La réunion sera suivie d'un moment convivial.</p>
     </div>
 
     <p class="text-cc-green text-xl">Évènements passés</p>
 
-    <div class="grid grid-cols-4 gap-4 justify-center">
+    <div class="grid grid-cols-5 gap-4 justify-center">
+      <Image src={flyer230126} alt="atelier public du 23/01/2026" width={350} />
       <Image src={flyer131225} alt="atelier public du 13/12/2025" width={350} />
       <Image src={flyer221125} alt="atelier public du 22/11/2025" width={350} />
       <Image src={flyer181025} alt="atelier public du 18/10/2025" width={350} />

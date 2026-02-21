@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  name: string;
+  description?: string;
+  image?: ImageMetadata;
+}
+
+const { name, description = '', image } = Astro.props;
+---
+
+<div class="@container">
+  <div class="@xl:grid @xl:grid-cols-[auto_1fr] @xl:grid-rows-[auto_1fr] @xl:gap-x-4">
+    <div class="row-span-2 flex justify-center">
+      {
+        image ? (
+          <Image
+            src={image}
+            alt={name}
+            width={150}
+            height={225}
+            class="w-[150px] h-[225px] rounded-lg mb-2 object-contain "
+          />
+        ) : (
+          <div class="w-[150px] h-[225px] bg-gray-300 rounded-lg mb-2" />
+        )
+      }
+    </div>
+    <p class="font-itim text-cc-blue text-xl @max-xl:text-center">{name}</p>
+    <p class="text-sm text-gray-700">{description}</p>
+  </div>
+</div>

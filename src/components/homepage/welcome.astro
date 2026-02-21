@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import liste from '../../assets/liste.jpg';
+import Header from '../Header.astro';
+---
+
+<section class="mb-6">
+  <Header>
+    <div class="border-cc-blue border-b-1 mx-4"></div>
+
+    <div class="py-8 px-4 max-w-5xl mx-auto flex flex-col sm:flex-row gap-8 items-center">
+      <Image src={liste} alt="La liste Confluences Citoyennes" class="w-full" />
+
+      <div class="space-y-4">
+        <p class="font-itim text-cc-blue text-2xl">UNE LISTE CITOYENNE ET PARTICIPATIVE À COUFFOULEUX</p>
+        <p>
+          Un projet construit avec des habitant.e.s de juin à décembre 2025 après une grande enquête et quatre ateliers
+          participatifs.
+        </p>
+        <p>
+          Une équipe issue d'un processus de désignation collectif et dont la tête de liste a été élue par les
+          sympathisants.
+        </p>
+      </div>
+    </div>
+  </Header>
+</section>

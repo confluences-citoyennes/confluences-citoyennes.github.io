@@ -1,0 +1,30 @@
+---
+import Candidat from '../Candidat.astro';
+import portrait12 from '../../assets/portraits/12.jpg';
+import portrait2 from '../../assets/portraits/2.jpg';
+import portrait21 from '../../assets/portraits/21.jpg';
+import portrait5 from '../../assets/portraits/5.jpg';
+---
+
+<section class="mb-6">
+  <div class="bg-cc-yellow p-4">
+    <h2 class="text-black text-3xl text-center uppercase">Nos candidates et candidats</h2>
+  </div>
+
+  <div class="max-w-5xl mx-auto mt-6 pb-0">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <Candidat name="Maud Forgeot" image={portrait12} />
+      <Candidat name="Christophe Hennart" image={portrait2} />
+      <Candidat name="Chloé Martin" image={portrait21} />
+      <Candidat name="Anthony Guyochet" image={portrait5} />
+    </div>
+
+    <div class="mt-6 text-center">
+      <a
+        href="/candidats"
+        class="inline-block font-itim text-xl bg-cc-green text-white px-8 py-3 rounded-full hover:underline"
+        >VOIR LA LISTE COMPLETE</a
+      >
+    </div>
+  </div>
+</section>

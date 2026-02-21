@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+---
+
+<div class="bg-cc-green p-4">
+  <div class="max-w-5xl mx-auto flex flex-row gap-4 justify-end">
+    <a
+      href="/#prochain-evenement"
+      class="font-itim text-sm bg-cc-yellow px-4 py-1 rounded-full hover:underline truncate"
+      >PROCHAIN RDV : LE 06 MARS à 20H</a
+    >
+    <a
+      href="https://coufouleux-commun.frama.space/apps/forms/s/QR3TEJJCjnxLaGwmyT8rT2ip"
+      class="font-itim text-sm bg-cc-yellow px-4 py-1 rounded-full hover:underline shrink-0">JE PARTICIPE</a
+    >
+    <a
+      href="https://www.facebook.com/profile.php?id=61581552459702"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="font-itim text-sm bg-cc-yellow px-4 py-1 rounded-full hover:underline shrink-0">FACEBOOK</a
+    >
+  </div>
+</div>
+
+<div class="p-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+  <a href="/">
+    <Image src={logo} alt="Confluences Citoyennes" width={350} />
+  </a>
+
+  <div>
+    <h1 class="text-cc-blue text-3xl">
+      <span class="sr-only">Confluences Citoyennes</span>
+      Participation, Écologie, Solidarité
+    </h1>
+    <p class="text-cc-blue text-xl">Elections municipales - 15 & 22 mars 2026</p>
+  </div>
+</div>
+
+<slot />

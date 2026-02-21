@@ -3,6 +3,16 @@ import '@fontsource/itim';
 import itim from '@fontsource/itim/files/itim-latin-400-normal.woff2?url';
 
 import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Confluences Citoyennes - Elections municipales Couffouleux',
+  description = 'Une liste citoyenne et participative pour les élections municipales 2026 de Couffouleux',
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -12,11 +22,8 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Confluences Citoyennes - Elections municipales Couffouleux</title>
-    <meta
-      name="description"
-      content="Une liste citoyenne et participative pour les élections municipales 2026 de Couffouleux"
-    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <link rel="preload" as="font" type="font/woff2" href={itim} crossorigin="anonymous" />
   </head>
   <body>

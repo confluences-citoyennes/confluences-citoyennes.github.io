@@ -1,16 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import CEstQuoi from '../components/c-est-quoi.astro';
-import Raison from '../components/raison.astro';
-import Retroplaning from '../components/retroplaning.astro';
-import Legitimes from '../components/legitimes.astro';
-import PlusLoin from '../components/plus-loin.astro';
+import Welcome from '../components/homepage/welcome.astro';
+import CEstQuoi from '../components/homepage/c-est-quoi.astro';
+import Raison from '../components/homepage/raison.astro';
+import Retroplaning from '../components/homepage/retroplaning.astro';
+import Legitimes from '../components/homepage/legitimes.astro';
+import PlusLoin from '../components/homepage/plus-loin.astro';
 import Layout from '../layouts/Layout.astro';
+import Candidats from '../components/homepage/candidats.astro';
 ---
 
 <Layout>
   <Welcome />
   <CEstQuoi />
+  <Candidats />
   <PlusLoin />
   <Raison />
   <Retroplaning />

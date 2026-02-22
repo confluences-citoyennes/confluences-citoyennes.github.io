@@ -1,6 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+
+// Participation
+import ficheEquipe from '../assets/fiches/participation/a-couffouleux-une-equipe-engagee-au-service-de-tous.pdf?url';
+import ficheAssemblee from '../assets/fiches/participation/creer-une-assemblee-citoyenne-a-couffouleux.pdf?url';
+import ficheDesescalade from '../assets/fiches/participation/desescalade-numerique.pdf?url';
+import ficheCitoyens from '../assets/fiches/participation/faire-de-tous-les-habitants-de-couffouleux-des-citoyens-pleinement-reconnus.pdf?url';
+import ficheGestion from '../assets/fiches/participation/gestion-responsable-des-ressources-communales-finances-et-rh.pdf?url';
+import ficheInterAsso from '../assets/fiches/participation/promouvoir-et-faciliter-les-initiatives-inter-associations-a-couffouleux.pdf?url';
+import ficheLien from '../assets/fiches/participation/renforcer-le-lien-entre-couffouleux-et-agglomeration-gaillac-graulhet.pdf?url';
+import ficheRenforcer from '../assets/fiches/participation/renforcer-les-projets-communaux-existants-par-la-participation-ecologie-et-la-solidarite.pdf?url';
+import ficheParticipatif from '../assets/fiches/participation/un-programme-participatif-et-vivant.pdf?url';
+
+// Écologie
+import ficheTerres from '../assets/fiches/ecologie/avenir-des-terres-agricoles-a-couffouleux.pdf?url';
+import ficheDechets from '../assets/fiches/ecologie/diminuer-les-dechets-a-couffouleux.pdf?url';
+import ficheEnergie from '../assets/fiches/ecologie/energie.pdf?url';
+import ficheJardin from '../assets/fiches/ecologie/jardin-de-savoir.pdf?url';
+import ficheMobilite from '../assets/fiches/ecologie/mobilite-jusquou-voulons-nous-aller.pdf?url';
+import ficheEau from '../assets/fiches/ecologie/preservation-de-leau-et-acces-pour-tous.pdf?url';
+import ficheBiodiversite from '../assets/fiches/ecologie/preserver-la-biodiversite.pdf?url';
+import ficheVegetalisation from '../assets/fiches/ecologie/promouvoir-une-vegetalisation-ambitieuse-et-partagee-a-couffouleux.pdf?url';
+import ficheRestauration from '../assets/fiches/ecologie/restauration-collective-alimentation-saine-et-locale.pdf?url';
+
+// Solidarité
+import ficheCCAS from '../assets/fiches/solidarite/accompagnement-social-et-humain-ccas.pdf?url';
+import ficheAdos from '../assets/fiches/solidarite/construire-une-politique-communale-a-destination-des-adolescents-a-couffouleux.pdf?url';
+import ficheDeveloppement from '../assets/fiches/solidarite/developpement-maitrise-et-qualite-de-vie-a-couffouleux.pdf?url';
+import ficheSportCulture from '../assets/fiches/solidarite/developper-lacces-au-sport-et-a-la-culture.pdf?url';
+import ficheMutuelle from '../assets/fiches/solidarite/etudier-un-projet-de-mutuelle-de-sante-communale-a-couffouleux.pdf?url';
+import ficheLogement from '../assets/fiches/solidarite/permettre-a-toutes-et-tous-de-se-loger-a-couffouleux.pdf?url';
+import ficheEntraide from '../assets/fiches/solidarite/promouvoir-et-faciliter-lentraide-a-couffouleux.pdf?url';
+import ficheSante from '../assets/fiches/solidarite/sante-donner-aux-habitants-les-moyens-de-vivre-une-vie-saine-et-promouvoir-le-bien-etre-a-tous-les-ages.pdf?url';
 ---
 
 <Layout title="Notre Programme - Confluences Citoyennes">
@@ -25,15 +57,15 @@ import Header from '../components/Header.astro';
           d'agir.
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-blue">
-          <li>Une équipe engagée au service de tous</li>
-          <li>Créer une Assemblée citoyenne</li>
-          <li>Désescalade numérique</li>
-          <li>Faire de tous les habitants des citoyens pleinement reconnus</li>
-          <li>Gestion responsable des ressources communales_finances et RH</li>
-          <li>Promouvoir et faciliter les initiatives inter-associations</li>
-          <li>Renforcer le lien entre Couffouleux et l’agglomération Gaillac-Graulhet</li>
-          <li>Renforcer les projets communaux existants par la participation, l’écologie et la solidarité</li>
-          <li>Un programme participatif… et vivant !</li>
+          <li><a href={ficheEquipe} target="_blank">Une équipe engagée au service de tous</a></li>
+          <li><a href={ficheAssemblee} target="_blank">Créer une Assemblée citoyenne</a></li>
+          <li><a href={ficheDesescalade} target="_blank">Désescalade numérique</a></li>
+          <li><a href={ficheCitoyens} target="_blank">Faire de tous les habitants des citoyens pleinement reconnus</a></li>
+          <li><a href={ficheGestion} target="_blank">Gestion responsable des ressources communales_finances et RH</a></li>
+          <li><a href={ficheInterAsso} target="_blank">Promouvoir et faciliter les initiatives inter-associations</a></li>
+          <li><a href={ficheLien} target="_blank">Renforcer le lien entre Couffouleux et l'agglomération Gaillac-Graulhet</a></li>
+          <li><a href={ficheRenforcer} target="_blank">Renforcer les projets communaux existants par la participation, l'écologie et la solidarité</a></li>
+          <li><a href={ficheParticipatif} target="_blank">Un programme participatif… et vivant !</a></li>
           <li>Une commune engagée dans les en-jeux sociaux et sociétaux</li>
         </ul>
       </div>
@@ -49,15 +81,15 @@ import Header from '../components/Header.astro';
           abordable, des espaces naturels et le vivant préservés...).
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-green">
-          <li>Avenir des terres agricoles</li>
-          <li>Diminuer les déchets</li>
-          <li>Énergie</li>
-          <li>Jardin de savoir – Alimentation</li>
-          <li>Mobilité, jusqu’où voulons-nous aller ?</li>
-          <li>Préservation de l’eau et accès pour tous</li>
-          <li>Préserver la biodiversité</li>
-          <li>Promouvoir une végétalisation ambitieuse et partagée</li>
-          <li>Restauration collective - Alimentation saine et locale</li>
+          <li><a href={ficheTerres} target="_blank">Avenir des terres agricoles</a></li>
+          <li><a href={ficheDechets} target="_blank">Diminuer les déchets</a></li>
+          <li><a href={ficheEnergie} target="_blank">Énergie</a></li>
+          <li><a href={ficheJardin} target="_blank">Jardin de savoir – Alimentation</a></li>
+          <li><a href={ficheMobilite} target="_blank">Mobilité, jusqu'où voulons-nous aller ?</a></li>
+          <li><a href={ficheEau} target="_blank">Préservation de l'eau et accès pour tous</a></li>
+          <li><a href={ficheBiodiversite} target="_blank">Préserver la biodiversité</a></li>
+          <li><a href={ficheVegetalisation} target="_blank">Promouvoir une végétalisation ambitieuse et partagée</a></li>
+          <li><a href={ficheRestauration} target="_blank">Restauration collective - Alimentation saine et locale</a></li>
           <li>Une économie soutenable</li>
         </ul>
       </div>
@@ -73,15 +105,15 @@ import Header from '../components/Header.astro';
           souci de l'autre, ceci dans un environnement sécurisé.
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-orange">
-          <li>Accompagnement social et humain-CCAS</li>
-          <li>Construire une politique communale à destination des adolescents</li>
-          <li>Développement maitrisé et qualité de vie</li>
-          <li>Développer l’accès au sport et à la culture</li>
-          <li>Étudier le projet de mutuelle de santé communale</li>
-          <li>Faciliter l’accès au logement</li>
-          <li>Promouvoir et faciliter l’entraide</li>
+          <li><a href={ficheCCAS} target="_blank">Accompagnement social et humain-CCAS</a></li>
+          <li><a href={ficheAdos} target="_blank">Construire une politique communale à destination des adolescents</a></li>
+          <li><a href={ficheDeveloppement} target="_blank">Développement maitrisé et qualité de vie</a></li>
+          <li><a href={ficheSportCulture} target="_blank">Développer l'accès au sport et à la culture</a></li>
+          <li><a href={ficheMutuelle} target="_blank">Étudier le projet de mutuelle de santé communale</a></li>
+          <li><a href={ficheLogement} target="_blank">Faciliter l'accès au logement</a></li>
+          <li><a href={ficheEntraide} target="_blank">Promouvoir et faciliter l'entraide</a></li>
           <li>
-            Santé - Donner aux habitant·e·s les moyens de vivre une vie saine et promouvoir le bien-être à tous les âges
+            <a href={ficheSante} target="_blank">Santé - Donner aux habitant·e·s les moyens de vivre une vie saine et promouvoir le bien-être à tous les âges</a>
           </li>
         </ul>
       </div>

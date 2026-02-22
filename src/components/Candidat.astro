@@ -4,10 +4,11 @@ import { Image } from 'astro:assets';
 interface Props {
   name: string;
   description?: string;
+  sub?: string;
   image?: ImageMetadata;
 }
 
-const { name, description = '', image } = Astro.props;
+const { name, description = '', sub = '', image } = Astro.props;
 ---
 
 <div class="@container">
@@ -28,6 +29,17 @@ const { name, description = '', image } = Astro.props;
       }
     </div>
     <p class="font-itim text-cc-blue text-xl @max-xl:text-center">{name}</p>
-    <p class="text-sm text-gray-700">{description}</p>
+    <p class="text-sm text-gray-700 whitespace-pre-line">
+      {description}
+      {
+        sub && (
+          <>
+            <br />
+            <br />
+            <span class="whitespace-pre-line italic">{sub}</span>
+          </>
+        )
+      }
+    </p>
   </div>
 </div>

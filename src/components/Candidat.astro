@@ -20,7 +20,7 @@ const { name, description = '', image } = Astro.props;
             alt={name}
             width={150}
             height={225}
-            class="w-[150px] h-[225px] rounded-lg mb-2 object-contain "
+            class="w-[150px] h-[225px] rounded-lg mb-2 object-contain hover:scale-105 transition-transform duration-300"
           />
         ) : (
           <div class="w-[150px] h-[225px] bg-gray-300 rounded-lg mb-2" />

@@ -3,12 +3,13 @@ import { Image } from 'astro:assets';
 
 interface Props {
   name: string;
+  subName?: string;
   description?: string;
-  sub?: string;
+  subDesc?: string;
   image?: ImageMetadata;
 }
 
-const { name, description = '', sub = '', image } = Astro.props;
+const { name, subName, description, subDesc, image } = Astro.props;
 ---
 
 <div class="@container">
@@ -28,18 +29,27 @@ const { name, description = '', sub = '', image } = Astro.props;
         )
       }
     </div>
-    <p class="font-itim text-cc-blue text-xl @max-xl:text-center">{name}</p>
-    <p class="text-sm text-gray-700 whitespace-pre-line">
-      {description}
-      {
-        sub && (
+    <p class="font-itim text-cc-blue text-xl @max-xl:text-center">
+      {name}{
+        subName && (
           <>
             <br />
-            <br />
-            <span class="whitespace-pre-line italic">{sub}</span>
+            {` ${subName}`}
           </>
         )
       }
+      <p class="text-sm text-gray-700 whitespace-pre-line">
+        {description}
+        {
+          subDesc && (
+            <>
+              <br />
+              <br />
+              <span class="italic">{subDesc}</span>
+            </>
+          )
+        }
+      </p>
     </p>
   </div>
 </div>

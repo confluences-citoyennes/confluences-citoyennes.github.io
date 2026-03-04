@@ -12,6 +12,7 @@ import ficheInterAsso from '../assets/fiches/participation/promouvoir-et-facilit
 import ficheLien from '../assets/fiches/participation/renforcer-le-lien-entre-couffouleux-et-agglomeration-gaillac-graulhet.pdf?url';
 import ficheRenforcer from '../assets/fiches/participation/renforcer-les-projets-communaux-existants-par-la-participation-ecologie-et-la-solidarite.pdf?url';
 import ficheParticipatif from '../assets/fiches/participation/un-programme-participatif-et-vivant.pdf?url';
+import ficheBienEtreSecu from '../assets/fiches/participation/renforcer-bien-etre-et-securite.pdf?url';
 
 // Écologie
 import ficheTerres from '../assets/fiches/ecologie/avenir-des-terres-agricoles-a-couffouleux.pdf?url';
@@ -23,6 +24,8 @@ import ficheEau from '../assets/fiches/ecologie/preservation-de-leau-et-acces-po
 import ficheBiodiversite from '../assets/fiches/ecologie/preserver-la-biodiversite.pdf?url';
 import ficheVegetalisation from '../assets/fiches/ecologie/promouvoir-une-vegetalisation-ambitieuse-et-partagee-a-couffouleux.pdf?url';
 import ficheRestauration from '../assets/fiches/ecologie/restauration-collective-alimentation-saine-et-locale.pdf?url';
+import ficheEconomie from '../assets/fiches/ecologie/economie-soutenable-et-locale.pdf?url';
+import ficheBienEtre from '../assets/fiches/ecologie/protection-et-bien-etre-animal.pdf?url';
 
 // Solidarité
 import ficheCCAS from '../assets/fiches/solidarite/accompagnement-social-et-humain-ccas.pdf?url';
@@ -56,9 +59,15 @@ import ficheSante from '../assets/fiches/solidarite/sante-donner-aux-habitants-l
           d'agir.
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-blue">
-          <li><a href={ficheEquipe} target="_blank">Une équipe engagée au service de tous</a></li>
-          <li><a href={ficheAssemblee} target="_blank">Créer une Assemblée citoyenne</a></li>
-          <li><a href={ficheDesescalade} target="_blank">Désescalade numérique</a></li>
+          <li>
+            <a href={ficheEquipe} target="_blank">Une équipe engagée au service de tous</a>
+          </li>
+          <li>
+            <a href={ficheAssemblee} target="_blank">Créer une Assemblée citoyenne</a>
+          </li>
+          <li>
+            <a href={ficheDesescalade} target="_blank">Désescalade numérique</a>
+          </li>
           <li>
             <a href={ficheCitoyens} target="_blank">Faire de tous les habitants des citoyens pleinement reconnus</a>
           </li>
@@ -70,14 +79,20 @@ import ficheSante from '../assets/fiches/solidarite/sante-donner-aux-habitants-l
           </li>
           <li>
             <a href={ficheLien} target="_blank"
-              >Renforcer le lien entre Couffouleux et l'agglomération Gaillac-Graulhet</a>
+              >Renforcer le lien entre Couffouleux et l'agglomération Gaillac-Graulhet</a
+            >
           </li>
           <li>
             <a href={ficheRenforcer} target="_blank"
-              >Renforcer les projets communaux existants par la participation, l'écologie et la solidarité</a>
+              >Renforcer les projets communaux existants par la participation, l'écologie et la solidarité</a
+            >
           </li>
-          <li><a href={ficheParticipatif} target="_blank">Un programme participatif… et vivant !</a></li>
-          <li>Une commune engagée dans les en-jeux sociaux et sociétaux</li>
+          <li>
+            <a href={ficheParticipatif} target="_blank">Un programme participatif… et vivant !</a>
+          </li>
+          <li>
+            <a href={ficheBienEtreSecu} target="_blank">Renforcer le bien-être et la sécurité</a>
+          </li>
         </ul>
       </div>
 
@@ -91,20 +106,39 @@ import ficheSante from '../assets/fiches/solidarite/sante-donner-aux-habitants-l
           abordable, des espaces naturels et le vivant préservés...).
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-green">
-          <li><a href={ficheTerres} target="_blank">Avenir des terres agricoles</a></li>
-          <li><a href={ficheDechets} target="_blank">Diminuer les déchets</a></li>
-          <li><a href={ficheEnergie} target="_blank">Énergie</a></li>
-          <li><a href={ficheJardin} target="_blank">Jardin de savoir – Alimentation</a></li>
-          <li><a href={ficheMobilite} target="_blank">Mobilité, jusqu'où voulons-nous aller ?</a></li>
-          <li><a href={ficheEau} target="_blank">Préservation de l'eau et accès pour tous</a></li>
-          <li><a href={ficheBiodiversite} target="_blank">Préserver la biodiversité</a></li>
+          <li>
+            <a href={ficheTerres} target="_blank">Avenir des terres agricoles</a>
+          </li>
+          <li>
+            <a href={ficheDechets} target="_blank">Diminuer les déchets</a>
+          </li>
+          <li>
+            <a href={ficheEnergie} target="_blank">Énergie</a>
+          </li>
+          <li>
+            <a href={ficheJardin} target="_blank">Jardin de savoir – Alimentation</a>
+          </li>
+          <li>
+            <a href={ficheMobilite} target="_blank">Mobilité, jusqu'où voulons-nous aller ?</a>
+          </li>
+          <li>
+            <a href={ficheEau} target="_blank">Préservation de l'eau et accès pour tous</a>
+          </li>
+          <li>
+            <a href={ficheBiodiversite} target="_blank">Préserver la biodiversité</a>
+          </li>
           <li>
             <a href={ficheVegetalisation} target="_blank">Promouvoir une végétalisation ambitieuse et partagée</a>
           </li>
           <li>
             <a href={ficheRestauration} target="_blank">Restauration collective - Alimentation saine et locale</a>
           </li>
-          <li>Une économie soutenable</li>
+          <li>
+            <a href={ficheEconomie} target="_blank">Une économie soutenable et locale</a>
+          </li>
+          <li>
+            <a href={ficheBienEtre} target="_blank">Protection et bien-être animal</a>
+          </li>
         </ul>
       </div>
 
@@ -118,19 +152,30 @@ import ficheSante from '../assets/fiches/solidarite/sante-donner-aux-habitants-l
           souci de l'autre, ceci dans un environnement sécurisé.
         </p>
         <ul class="list-disc list-inside [&>li]:ml-2 text-cc-orange">
-          <li><a href={ficheCCAS} target="_blank">Accompagnement social et humain-CCAS</a></li>
+          <li>
+            <a href={ficheCCAS} target="_blank">Accompagnement social et humain-CCAS</a>
+          </li>
           <li>
             <a href={ficheAdos} target="_blank">Construire une politique communale à destination des adolescents</a>
           </li>
-          <li><a href={ficheDeveloppement} target="_blank">Développement maitrisé et qualité de vie</a></li>
-          <li><a href={ficheSportCulture} target="_blank">Développer l'accès au sport et à la culture</a></li>
-          <li><a href={ficheMutuelle} target="_blank">Étudier le projet de mutuelle de santé communale</a></li>
-          <li><a href={ficheLogement} target="_blank">Faciliter l'accès au logement</a></li>
-          <li><a href={ficheEntraide} target="_blank">Promouvoir et faciliter l'entraide</a></li>
+          <li>
+            <a href={ficheDeveloppement} target="_blank">Développement maitrisé et qualité de vie</a>
+          </li>
+          <li>
+            <a href={ficheSportCulture} target="_blank">Développer l'accès au sport et à la culture</a>
+          </li>
+          <li>
+            <a href={ficheMutuelle} target="_blank">Étudier le projet de mutuelle de santé communale</a>
+          </li>
+          <li>
+            <a href={ficheLogement} target="_blank">Faciliter l'accès au logement</a>
+          </li>
+          <li>
+            <a href={ficheEntraide} target="_blank">Promouvoir et faciliter l'entraide</a>
+          </li>
           <li>
             <a href={ficheSante} target="_blank"
-              >Santé - Donner aux habitant·e·s les moyens de vivre une vie saine et promouvoir le bien-être à tous les
-              âges</a
+              >Donner aux habitant·e·s les moyens de vivre une vie saine et promouvoir le bien-être à tous les âges</a
             >
           </li>
         </ul>
